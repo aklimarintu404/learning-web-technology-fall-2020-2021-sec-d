@@ -4,9 +4,13 @@
 </head>
 <body>
     <form>
-        <table border ="1" width="50%" align="center">
+        <table border ="1" width="900px" align="center">
             <tr>
                 <td><img width="50" height="35" src="images/logo.png"></td>
+		<td colspan="2" align="right">
+                <a href="public_home.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Register</a></td>
             </tr>
             <tr>
                 <td colspan="4"><h1>Welcome to xCompany</h1></td>
