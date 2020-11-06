@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>X Company Home</title>
+    <title>X Company</title>
 </head>
 <body>
     <form>
@@ -12,8 +12,23 @@
                 <a href="login.html">Login</a> |
                 <a href="registration.html">Registration</a></td>
             </tr>
+			
             <tr height="400px" >
-                <td colspan="4"><h3>Welcome to xCompany</h3></td>
+			 <td  colspan="2" 
+			 <td   
+			 <form method= "post" action="" >
+			 <fieldset >
+			 <legend><b>LOGIN</b></legend>
+			 <pre>User Name : <input type="text" name="name"></pre>
+			 <pre>Password  : <input type="text" name="password"><hr></pre>
+			 <input type="checkbox" name="remember me"> Remember Me<br>
+			 <input type="submit" value="Submit">
+			 <a href="Forget Password.html">Forget Password?</a> 
+				
+			</fieldset >
+			
+			</td>
+			</td>		
             </tr>
             <tr>
                 <td align="center" colspan="4">Copyright &#169; 2017</td>
