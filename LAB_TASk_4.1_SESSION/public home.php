@@ -1,9 +1,31 @@
+<?php
+	
+    
+        if(isset($_REQUEST['hbutton']))
+        {
+            header('location: publicHome.php');
+        }
+        elseif(isset($_REQUEST['lbutton']))
+        {
+            header('location: login.html');
+        }
+        elseif(isset($_REQUEST['rbutton']))
+        {
+            header('location: Registration.html');
+        }
+        
+
+?>
+
+
+
 <html>
 <head>
     <title>X Company</title>
 </head>
 <body>
-    <form>
+
+    <form action="#" method="POST">
         <table border ="1" width="100%"  >
             <tr>
                 <td width="100px" ><img width="100px" height="100px" src="company.jpg"></td>

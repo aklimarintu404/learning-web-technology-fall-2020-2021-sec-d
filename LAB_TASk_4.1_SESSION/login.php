@@ -1,3 +1,29 @@
+<?php
+if(isset($_REQUEST['submit'])){
+    
+    if($_REQUEST['uname']==$_COOKIE['username'] and $_REQUEST['password']==$_COOKIE['password']){
+        
+        if(isset($_REQUEST['remember_me'])){
+            setcookie('runame', $_REQUEST['uname'], time()+3600);
+            setcookie('rpassword', $_REQUEST['password'], time()+3600);
+        }
+        
+        session_start();
+        $_SESSION['uname'] = $_REQUEST['uname'];
+        $_SESSION['password'] = $_REQUEST['password'];
+        header('location: dashboard.php');
+        
+    }
+    
+    else{
+        echo "Invalid !";
+    }
+    
+}
+
+?>
+
+
 <html>
 <head>
     <title>X Company</title>

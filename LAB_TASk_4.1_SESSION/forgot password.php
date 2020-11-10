@@ -1,3 +1,20 @@
+<?php
+if(isset($_REQUEST['submit'])){
+    
+    if($_COOKIE['email']==$_REQUEST['email']){
+        
+        echo "sent!";  
+    }
+    
+    else{
+        
+        echo "Invalid email!";
+    }
+}
+
+?>
+
+
 <html>
 <head>
     <title>X Company</title>
@@ -21,7 +38,7 @@
 			 <legend><b>FORGOT PASSWORD</b></legend>
 			 <pre>Enter Email : <input type="text" name="name"></pre><hr>
 			 <input type="submit" value="Submit">
-			  	
+			  	</fieldset >
             </tr>
             <tr>
                 <td align="center" colspan="4">Copyright &#169; 2017</td>
