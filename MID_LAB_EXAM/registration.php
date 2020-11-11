@@ -1,5 +1,25 @@
 
-
+<?php
+	
+	session_start();
+    if(isset($_REQUEST['submit'])){
+        if(!empty($_REQUEST['name']) || !empty($_REQUEST['password']) || !empty($_REQUEST['cpass']) ||  !empty($_REQUEST['id']) ||  !empty($_REQUEST['user']))
+		{
+            
+            $info = $_REQUEST['name']."|".$_REQUEST['password']. "|".$_REQUEST['cpass'] ."|".$_REQUEST['id'] ."|".$_REQUEST['user']."\n";
+            $home = fopen("registration", "w");
+            fwrite($home, $info);
+            fclose($home);
+            echo "Registration done!";
+            
+        }
+        
+        else{
+            echo "Error!";
+            
+        }
+    }
+?>
 
 <html>
 <head>
