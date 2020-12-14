@@ -1,0 +1,17 @@
+<?php
+/**
+ * Export to PHP Array plugin for PHPMyAdmin
+ * @version 5.0.1
+ */
+
+/**
+ * Database `webtech`
+ */
+
+/* `webtech`.`profile` */
+$profile = array(
+  array('ID' => '15101011','Name' => 'Bob','Email' => 'bob@gmail.','user type' => 'Admin'),
+  array('ID' => '161010122','Name' => 'Anne','Email' => 'anne@gmail','user type' => 'User'),
+  array('ID' => '1610103','Name' => 'Kent','Email' => 'kent@gmail','user type' => 'User'),
+  array('ID' => '16101043','Name' => 'James','Email' => 'james@gmai','user type' => 'Admin')
+);
